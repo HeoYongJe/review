@@ -3,3 +3,4 @@ console.log(result);
 
 const arr = ['a','b','c'];
 console.log(arr);
+arr[0];
