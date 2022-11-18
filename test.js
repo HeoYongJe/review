@@ -54,3 +54,4 @@ let eq2 = '10';
 console.log(eq == eq2); //값을비교
 console.log(eq !== eq2); 
 console.log(eq === eq2); //타입을 비교 eq는 숫자 eq2는 문자열 타입이 다르다
+
