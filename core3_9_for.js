@@ -3,13 +3,16 @@
 //   동작부분
 // }
 
-for(let i = 1; i <= 5; i++){
+for(let i = 0; i <= 5; i++){
   console.log(i);
 }
 
+for (let i = 0; i <= 5; ++i){
+  console.log(i)
+};
+
 //삼각형 별찍기
 function printTriangle(height) {
-	// 여기에 코드를 작성하세요
 	let star = '';
 	for(let i = 0; i < height; i++){
 	  star += '*';
@@ -26,3 +29,4 @@ printTriangle(3);
 
 console.log('높이: 5');
 printTriangle(5);
+
