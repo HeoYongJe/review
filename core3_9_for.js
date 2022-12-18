@@ -21,7 +21,7 @@ function printTriangle(height) {
 }
 
 // 테스트 코드
-console.log('높이: 1');
+console.log('높이: 1'); 
 printTriangle(1);
 
 console.log('높이: 3');
