@@ -30,3 +30,11 @@ printTriangle(3);
 console.log('높이: 5');
 printTriangle(5);
 
+
+//for문 예제 구구단 만들기
+for(let i = 1; i <= 9 ; i++) {
+  // console.log(`1 * ${i} = ${1 * i}`)
+  for(let j = 1; j <= 9; j++ ){
+    console.log(`${i} * ${j} = ${i * j} `)
+  }
+}
