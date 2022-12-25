@@ -32,3 +32,17 @@ console.log(codeit.study_List['list two']);
 
 //존재하지 않는 프로퍼티에 접근하면 에러가 아닌 undefined가 뜬다
 console.log(codeit.age); // undefined
+
+//객체 프로퍼티 삭제
+console.log(delete codeit.age);
+console.log(codeit.age);
+
+
+//객체와 메소드
+let greetings = {
+  sayHello: function(name){
+    console.log(`hello ${name}`);
+  }
+}
+
+console.log(greetings.sayHello('hi'));
