@@ -31,3 +31,5 @@ for (name2 of votes) {
 }
 
 console.log(voteCounter); // '허용제' : 3, '김진주':5 ;
+
+//for..of = 배열 반복 / for..in = 객체 반복
