@@ -51,3 +51,27 @@ function printArguments1(first, second, ...others) {
 }
 
 printArguments1('가','나','다','라');
+
+
+
+// 예제
+// 첫 번째 아규먼트는 무시하고 두 번째 아규먼트 부터 하나씩 콘솔에 출력
+// [1]
+function ignoreFirst(first, ...list) {
+  for(const li of list){
+    console.log(li)
+  }
+}
+
+// [2]
+function ignoreFirst(...list) {
+  list.splice();
+
+  for(const li of list){
+    console.log(li)
+  }
+}
+
+
+ignoreFirst('1세대', '2세대', '3세대');
+ignoreFirst('곰팡이', '다람쥐', '상어');
