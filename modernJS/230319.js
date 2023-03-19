@@ -30,3 +30,25 @@ const user1 = {
 }
 
 printCatName(user1);
+
+
+//구조분해 Destructuring
+const rank = ['용제','진주','은우','가','나','다'];
+
+// const ipad = rank[0];
+// const iphone = rank[1];
+// const airpods = rank[2];
+
+const [ipad,iphone,airpods, ...coupon] = rank; //할당 연산자 오른쪽이 배열의 값이 아니거나 아무것도 할당하지 않으면 오류발생
+
+console.log(ipad);
+console.log(iphone);
+console.log(airpods);
+console.log(coupon);
+
+
+let macbook = '용제';
+let ipad2 = '진주';
+
+[macbook, ipad2] = [ipad2, macbook]; // 변수에 할당된 값을 서로 교환
+// 할당 연산자는 오른쪽 값을 왼쪽 피연산자에 할당
