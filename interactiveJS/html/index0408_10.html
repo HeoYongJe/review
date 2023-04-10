@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>종합 정리</title>
+</head>
+<body>
+  <h1>종합정리</h1>
+  <div>
+    <h2>window 객체</h2>
+		<p>window 객체는 브라우저 창을 대변하면서 자바스크립트에서 최상단에 존재하는 객체</p>
+  </div>
+  <div>
+    <h2>DOM</h2>
+		<p>DOM이란 문서 객체 모델이며, 웹 페이지에 나타나는 HTML 문서 전체를 객체로 표현한 것</p>
+    <p>각 객체를 노드(Node)라는 용어로 표현하고, 태그는 요소 노드, 문자는 텍스트 노드로 구분</p>
+  </div>
+  <div>
+    <h2>요소 노드 다루기</h2>
+		<ul>
+      <li>요소 노드 만들기: document.createElement('태그이름')</li>
+      <li>요소 노드 꾸미기: element.textContent, element.innerHTML, ...</li>
+      <li>요소 노드 추가 혹은 이동하기: element.prepend, element.append, element.after, element.before</li>
+      <li>요소 노드 삭제하기: element.remove()</li>
+    </ul>
+  </div>
+  <div>
+    <h2>HTML 속성 다루기</h2>
+		<ul>
+      <li>속성에 접근하기: element.getAttribute('속성')</li>
+      <li>속성 추가(수정)하기: element.setAttribute('속성', '값')</li>
+      <li>속성 제거하기: element.removeAttribute('속성')</li>
+    </ul>
+  </div>
+  <div>
+    <h2>스타일 다루기</h2>
+		<ul>
+      <li>style 프로퍼티 활용하기: element.style.styleName = 'value';</li>
+      <li>class 변경을 통해 간접적으로 스타일 적용하기: element.className, element.classList</li>
+    </ul>
+    <h3>classList의 유용한 메소드</h3>
+    <dl>
+      <dt>classList.add</dt>
+      <dd>클래스 추가하기, 여러 개의 값을 전달하면 여러 클래스 추가 가능</dd>
+      <dt>classList.remove</dt>
+      <dd>클래스 삭제하기, 여러 개의 값을 전달하면 여러 클래스 삭제 가능</dd>
+      <dt>classList.toggle</dt>
+      <dd>클래스 없으면 추가, 있으면 삭제하기, 하나의 값만 적용 가능하고 두 번째 파라미터로 추가 또는 삭제 기능을 강제할 수 있음</dd>
+    </dl>
+  </div>
+</body>
+</html>
